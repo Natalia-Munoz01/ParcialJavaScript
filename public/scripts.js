@@ -5,15 +5,12 @@
 document.getElementById("btnSend").addEventListener("click", () => {
 
     const product = {
-        code: 1,
+        code: "ABC12-DN",
         description: "CHOCOLATE",
         stock: 15,
         value: 5,
-        stockmin: "60"
+        sotckmin: 60
     };
-
-
-    console.log(JSON.stringify(product));
 
     const URL = "http://localhost:3001";
     fetch(URL, {
@@ -27,3 +24,4 @@ document.getElementById("btnSend").addEventListener("click", () => {
         .then((data) => console.log(data))
         .catch((err) => alert(err));
 });
+

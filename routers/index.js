@@ -26,12 +26,13 @@ router.get("/add-product", (req, res) => {
     res.render("new-product.ejs", { title: "Adicionar Producto" });
 });
 
+
 router.post("/", (req, res) => {
     const { code, description, stock, value, stockmin } = req.body;
-    if (!products.has(parseInt(id))) {
-        products.set(parseInt(id), {
+    if (!products.has(parseInt(code))) {
+        products.set(parseInt(code), {
             code: code,
-            description: deescription,
+            description: description,
             stock: stock,
             value: value,
             stockmin: stockmin
@@ -44,8 +45,10 @@ router.post("/", (req, res) => {
 
     return res
         .status(200)
-        .json({ status: false, message: "Producto ya Registrada" });
+        .json({ status: false, message: "Producto ya Registrado" });
 });
+
+
 
 module.exports = router;
 

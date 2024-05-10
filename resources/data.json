@@ -1,0 +1,60 @@
+{
+  "products": {
+    "4356df34": {
+      "code": "4356df34",
+      "description": "Jabón de Baño",
+      "stock": 434,
+      "value": 8500,
+      "sotck-min": 10
+    },
+    "83hfgr4": {
+      "code": "83hfgr4",
+      "description": "Cepillo Bucal",
+      "stock": 533,
+      "value": 12800,
+      "sotck-min": 5
+    },
+    "72947-4": {
+      "code": "72947-4",
+      "description": "Bolsa Caramelos x 100",
+      "stock": 35,
+      "value": 19000,
+      "sotck-min": 3
+    },
+    "69972-A": {
+      "code": "69972-A",
+      "description": "Pasta de Seco",
+      "stock": 927,
+      "value": 6700,
+      "sotck-min": 20
+    },
+    "78238-N": {
+      "code": "78238-N",
+      "description": "Jarra de Yogurth",
+      "stock": 37,
+      "value": 23400,
+      "sotck-min": 5
+    },
+    "96383-J": {
+      "code": "96383-J",
+      "description": "Panela x Libra",
+      "stock": 1700,
+      "value": 1320,
+      "sotck-min": 30
+    },
+    "19374-AS": {
+      "code": "19374-AS",
+      "description": "Ceda Dental",
+      "stock": 12,
+      "value": 19000,
+      "sotck-min": 10
+    },
+    "88274-JR": {
+      "code": "88274-JR",
+      "description": "Paca de Leche",
+      "stock": 35,
+      "value": 28400,
+      "sotck-min": 30
+    }
+  }
+}

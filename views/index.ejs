@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('./templates/header.ejs')%>
+    <body>
+        <div class="container">
+            <h1>Lista de Productos</h1>
+            <%if(data.size > 0 ){%>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Description</th>
+                        <th>Stock</th>
+                        <th>Value</th>
+                        <th>Stockmin</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for( const [key, value] of data){%>
+                    <tr>
+                        <td><%value.Code%></td>
+                        <td><%=value.description%></td>
+                        <td><%=value.stock%></td>
+                        <td><%=value.value%></td>
+                        <td><%=value.stockmin%></td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+            <%}else{%>
+            <h2>NOOOOO</h2>
+            <%}%>
+            <a href="/add-product" class="btn-primary btn">Agregar Producto</a>
+        </div>
+        <%-include('./templates/footer.ejs')%>
+        <script src="./public/scripts.js"></script>
+    </body>
+</html>
+
+  
+  
+
+
+
